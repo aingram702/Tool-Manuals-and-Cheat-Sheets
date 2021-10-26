@@ -1,1 +1,11 @@
 # PsFile Command-line options
+ 
+Usage: C:\Users\user1\psfile.exe [\\RemoteComputer [-u Username [-p Password]]] [[Id | path] [-c]]
+     -u           | Specifies optional user name for login to remote computer.
+     -p           | Specifies password for user name.
+     Id           | Id of file to print information for or close.
+     Path         | Full or partial path of files to match.
+     -c           | Closes file identified by file Id.
+     -nobanner    | Do not display the startup banner and copyright message.
+     
+Omitting a file identifier has PsFile list all files opened remotely.
