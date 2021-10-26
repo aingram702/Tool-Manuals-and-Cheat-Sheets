@@ -1,3 +1,27 @@
 # PsExec Command-line Options
 
-## <strong>Option</strong> 
+## <strong>Option</strong>    <strong>Description</strong>
+-d    | Doesn't wait for the process to terminate.
+
+### Process performance options
+-background     | 
+-low            |
+-belownormal    |
+abovenormal     | Runs the process at a different priority.
+-high           |
+-realtime       |
+-a n,n..        | Specifies the CPUs on which process can run.
+
+### Remote connectivity options
+-c [-f|-v]      | Copies the specifierd program from the local filesystem to the remote system. If you omit this option, the application must be in the system path on the remote system. Adding -f forces the copy to occur even if it already exists on the remote system and is marked read-only; -v performs a version or timestamp check and copies only if source is newer.
+-n seconds      | Specifies the timeoutr in seconds when connecting to remote comp[uters
+
+### Runtime environment errors
+-s              | Runs process in system account.
+-i [session]    | Runs the program on an interactive desktop.
+-x              | Runs the process on the Winlogon secure desktop.
+-r servicename  | Specifies the name of the remote PsExec service and executable.
+-w directory    | Sets the working directory of the process.
+-e              | Does not load the specified account's profile.
+-h              | Uses the account's elevated context, if available.
+-l              | Runs the process as a limited user. 
