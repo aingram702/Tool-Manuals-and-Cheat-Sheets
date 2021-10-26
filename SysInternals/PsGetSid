@@ -1,1 +1,20 @@
 # PsGetSid Command-line options
+
+
+Usage: C:\Users\user1\PsGetsid.exe [\\computer[,computer2[,...] | @file] [-u Username [-p Password]]] [account | SID]
+
+     -u         Specifies optional user name for login to
+                remote computer.
+     -p         Specifies optional password for user name. If you omit this
+                you will be prompted to enter a hidden password.
+     account    PsGetSid will report the SID for the specified user account
+                rather than the computer.
+     SID        PsGetSid will report the account for the specified SID.
+     computer   Direct PsGetSid to perform the command on the remote
+                computer or computers specified. If you omit the computer
+                name PsGetSid runs the command on the local system,
+                and if you specify a wildcard (\\*), PsGetSid runs the
+                command on all computers in the current domain.
+     @file      PsGetSid will execute the command on each of the computers listed
+                in the file.
+     -nobanner  Do not display the startup banner and copyright message.
